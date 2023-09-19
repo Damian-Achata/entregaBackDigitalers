@@ -48,12 +48,12 @@
     <div>
         <!-- Usando la clase de boostrap se encarga de centrar el titulo automaticamente solo agregando la clase -->
         <h1 class="m-5 text-center">
-            Formulario de Login
+            Formulario de Registro
         </h1>
     </div>
     <!-- el div y la clase container mantienen centrado el formulario con boostrap -->
     <div class="container">
-        <form action="usuario/login" method="post" >
+        <form action="usuario/registro" method="post" >
             <div class="mb-3">
                 <label for="user" class="form-label">User</label>
                 <input type="text" class="form-control" id="user" name="user" placeholder="Usuario" required>
@@ -63,6 +63,10 @@
                 <input type="password" id="password" class="form-control" name="password" aria-describedby="passwordHelpBlock" placeholder="Password" required>
                 <div id="passwordHelpBlock" class="form-label">
                 Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
                 </div>
                 <button onclick="" type="submit" class="btn btn-success w-50">Login</button>
               </div>
