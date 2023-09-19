@@ -38,5 +38,10 @@ router.delete('/delete:id', (req,res) => {
     let usuario = req.params.id;
     res.send(`<h1>Usuario actualizado</h1>`)
 })
+
+router.get('/registro',(req,res) => {
+    res.sendFile('registro.html')
+})
+
 //exportamos el modulo router.
 module.exports = router;
